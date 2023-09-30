@@ -75,7 +75,7 @@ window.onload = function() {
     requestAnimationFrame(update)
     setInterval(placePipes, 1500) ; // 1.5 sekund
 
-    document.addEventListener('keydown' || 'click' || 'touch', moveBird)
+    window.addEventListener('keydown' || 'click' , moveBird)
 
 }
 
@@ -164,7 +164,7 @@ function placePipes() {
 
 
 function moveBird(e) {
-    if(e.code == 'Space' || e.code == 'ArrowUp') {
+    if(e.code == 'Space' || e.code == 'touch') {
         //jump
         velocityY = -4
 
