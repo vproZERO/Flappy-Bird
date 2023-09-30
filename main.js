@@ -4,7 +4,7 @@
 
 let board ;
 let boardWidth = 360;
-let boardHeight = 640;
+let boardHeight = 620;
 let context;
 
 
@@ -75,7 +75,7 @@ window.onload = function() {
     requestAnimationFrame(update)
     setInterval(placePipes, 1500) ; // 1.5 sekund
 
-    document.addEventListener('keydown', moveBird)
+    document.addEventListener('keydown' || 'click' || 'touch', moveBird)
 
 }
 
