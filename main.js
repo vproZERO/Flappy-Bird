@@ -69,10 +69,15 @@ window.onload = function () {
   document.addEventListener("touchstart", moveBird);
 };
 
+const score_span = document.getElementById("score_span")
+const modal = document.getElementById("modal")
+
 function update() {
   requestAnimationFrame(update);
   if (gameOver) {
+    modal.classList.add("openModal")
     return;
+    
   }
   context.clearRect(0, 0, board.width, board.height);
 
@@ -112,9 +117,7 @@ function update() {
   context.font = "45px sans-serif";
   context.fillText(score, 5, 45);
 
-  if (gameOver) {
-    context.fillText("GAME OVER", 5, 90);
-  }
+  
 }
 
 function placePipes() {
@@ -159,6 +162,7 @@ function moveBird() {
       pipeArray = [];
       score = 0;
       gameOver = false;
+      modal.classList.remove("openModal")
     }
 }
 
