@@ -22,7 +22,22 @@ body{
     background-image: url('./flappybirdbg.png');
     
 }
-
+#score_span{
+    font-weight: bold;
+    font-size: 1.5rem ;
+}
+.modal_text{
+    font-weight: normal;
+    font-size: x-large;
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+.modal_subtitle{
+    background-color: #FC6600;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+}
 .modal{
     left: 0;
     top: 0;
@@ -34,7 +49,7 @@ body{
 }
 .modal_box{
     background-color: white;
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
     padding: 15px;
     border-radius: 12px;

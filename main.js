@@ -76,6 +76,7 @@ function update() {
   requestAnimationFrame(update);
   if (gameOver) {
     modal.classList.add("openModal")
+    score_span.innerText = score
     return;
     
   }
@@ -115,7 +116,7 @@ function update() {
   //score
   context.fillStyle = "white";
   context.font = "45px sans-serif";
-  context.fillText(score, 5, 45);
+  context.fillText(score, 20, 55);
 
   
 }
