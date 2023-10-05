@@ -1,7 +1,7 @@
 //board
 let board;
 let boardWidth = 400;
-let boardHeight = 755;
+let boardHeight = 700;
 let context;
 
 //bird
@@ -154,7 +154,7 @@ function placePipes() {
 
 function moveBird() {
     //jump
-    velocityY = -5;
+    velocityY = -9;
 
     //reset game
     if (gameOver) {
