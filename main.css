@@ -14,12 +14,14 @@ body{
 
 .container{
     width: 100%;
-    position: relative;
+   
 }
 
 #board{
     /* background-color: skyblue; */
     background-image: url('./flappybirdbg.png');
+     position: relative;
+     height: 705px;
     
 }
 #score_span{
@@ -27,7 +29,6 @@ body{
     font-size: 1.5rem ;
 }
 .modal_text{
-    font-weight: normal;
     font-size: x-large;
     font-family: monospace;
     margin-bottom: 5px;
@@ -59,4 +60,33 @@ body{
 }
 .openModal{
     display: flex;
+}
+
+@media screen and (max-width: 360px) {
+    #board{
+        width: 360px;
+        height: 600px;
+    }
+    .modal_box{
+        width: 250px;
+    }
+    .modal_text{
+        font-weight: bold;
+    }
+    .modal_text{
+        font-size: large;
+        font-family: monospace;
+        margin-bottom: 5px;
+    }
+    #score_span{
+        font-weight: bold;
+        font-size: 1rem ;
+    }
+    .modal_subtitle{
+        background-color: #FC6600;
+        color: white;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: small;
+    }
 }
